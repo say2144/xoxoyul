@@ -1,30 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>xoxoyul | my cute</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>카와이의 유혹 | Kawaii Shop</title>
+  <meta name="description" content="귀여운 것들만 모았어요. Follow the kawaii sparkle!">
+  <meta property="og:title" content="카와이의 유혹">
+  <meta property="og:description" content="귀여움은 생활이에요 · 🍓🐰🎀">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="preview.png">
   <style>
-    body {
-      font-family: 'Pretendard', sans-serif;
-      background-color: #fff8fa;
-      color: #ff6fae;
-      text-align: center;
-      padding-top: 120px;
-      font-size: 18px;
+    :root{
+      --pink:#ffd6e7;
+      --pink-deep:#ff8fb8;
+      --text:#6b2b46;
+      --white:#fff;
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo","Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 30% 20%, #ffeef6, var(--pink));
+      color:var(--text);
     }
-    p {
-      color: #888;
-      font-size: 20px;
+    .wrap{
+      max-width:720px;
+      margin:0 auto;
+      padding:32px 20px 64px;
+      text-align:center;
     }
+    .card{
+      background:#fff;
+      border-radius:24px;
+      box-shadow:0 10px 25px rgba(255, 143, 184, .35);
+      padding:28px 20px;
+      border:4px solid #ffe2ef;
+    }
+    .brand{
+      font-size:32px;
+      font-weight:800;
+      letter-spacing:1px;
+      color:#e3568c;
+      margin:8px 0 6px;
+    }
+    .tagline{margin:0 0 16px; font-size:15px; opacity:.85}
+    img.hero{
+      width:160px;height:160px;object-fit:cover;border-radius:24px;border:5px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.06)
+    }
+    .btns{display:flex;flex-direction:column; gap:12px; margin:22px 0}
+    .btn{
+      display:flex; align-items:center; justify-content:center;
+      gap:10px;
+      text-decoration:none;
+      padding:14px 16px;
+      border-radius:14px;
+      background:linear-gradient(180deg,#ffb6d2,#ff8fb8);
+      color:#fff; font-weight:700; font-size:16px;
+      box-shadow:0 8px 18px rgba(227, 86, 140,.35);
+      border:2px solid #ffd1e1;
+    }
+    .btn.secondary{
+      background:#fff; color:#e3568c; border:2px dashed #ffc0d6;
+      box-shadow:none;
+    }
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .chip{background:#fff;border:2px solid #ffd8e8;border-radius:999px;padding:8px 12px;font-weight:700;color:#e3568c}
+    footer{margin-top:26px;font-size:12px;opacity:.7}
+    .pearls{margin-top:10px;display:flex;justify-content:center;gap:8px}
+    .pearl{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #fff, #e7dce2)}
   </style>
 </head>
 <body>
-  <h1>🩷 xoxoyul 🩷</h1>
-  <p>my cute world</p>
+  <div class="wrap">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="kawaii" class="hero">
+      <div class="brand">카와이의 유혹</div>
+      <div class="tagline">귀여움은 생활이에요 · 🍓🐰🎀</div>
+
+      <div class="btns">
+        <a href="https://www.instagram.com/jiyul.zzz" target="_blank" class="btn">📸 Instagram</a>
+        <a href="https://m.smartstore.naver.com/xoxojiyul" target="_blank" class="btn">🛍️ Smart Store</a>
+        <a href="https://open.kakao.com/o/skcbMA0h" target="_blank" class="btn secondary">💬 오픈채팅</a>
+      </div>
+
+      <div class="grid">
+        <div class="chip">귀여움</div>
+        <div class="chip">키치</div>
+        <div class="chip">핑크</div>
+      </div>
+
+      <footer>© 2025 xoxoyul · All kawaii reserved</footer>
+      <div class="pearls">
+        <div class="pearl"></div><div class="pearl"></div><div class="pearl"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
 
